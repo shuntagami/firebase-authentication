@@ -33,6 +33,9 @@ Layout/LineLength:
   Exclude:
     - "lib/firebase/**/*"
 
+Metrics/AbcSize:
+  Max: 30
+
 Metrics/MethodLength:
   Max: 20
   Exclude:
