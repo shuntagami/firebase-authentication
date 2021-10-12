@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["shuntagami23@gmail.com"]
 
   spec.summary       = "Firebase Authentication for Ruby client"
-  spec.homepage      = "https://github.com/shuntagami/firebase_auth_for_ruby"
+  spec.homepage      = "https://github.com/shuntagami/firebase-authentication"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 3.0.0"
 
