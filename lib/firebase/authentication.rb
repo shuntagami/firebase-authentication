@@ -34,7 +34,7 @@ module Firebase
       end
 
       def create_custom_token(uid, claims = {})
-        private_key = OpenSSL::PKey::RSA.new Global.firebase.private_key.gsub('\\n', "\n")
+        private_key = OpenSSL::PKey::RSA.new Global.firebase.private_key.gsub("\\n", "\n")
         service_account_email = Global.firebase.client_email
         now_seconds = Time.now.to_i
         payload = { iss: service_account_email,
