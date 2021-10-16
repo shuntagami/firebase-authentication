@@ -30,6 +30,12 @@ module Firebase
         res
       end
 
+      def exchange_custom_token(token)
+        res = fetch(:post, Config::VERIFY_CUSTOM_TOKEN, { idToken: token, returnSecureToken: true })
+        res.value
+        res
+      end
+
       def get_account_info(token)
         res = fetch(:post, Config::GET_ACCOUNT_INFO, { idToken: token })
         res.value

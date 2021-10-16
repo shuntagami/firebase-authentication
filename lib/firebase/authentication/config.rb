@@ -13,6 +13,7 @@ module Firebase
       SIGN_IN_OAUTH = "signInWithIdp?key="
       SIGN_UP_EMAIL = "signUp?key="
       UPDATE_ACCOUNT_INFO = "update?key="
+      VERIFY_CUSTOM_TOKEN = "signInWithCustomToken?key="
     end
   end
 end
