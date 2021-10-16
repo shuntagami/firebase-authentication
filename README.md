@@ -33,6 +33,13 @@ Then, call the [method](https://github.com/shuntagami/firebase-authentication/bl
 service.sign_up(email, password)
 ```
 
+You can use the response like below.<br>
+
+```ruby
+response = service.sign_up(email, password)
+uid = JSON.parse(response.body)['localId'] # The uid of the newly created user.
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -41,12 +48,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/firebase-authentication. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/firebase-authentication/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/shuntagami/firebase-authentication. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/shuntagami/firebase-authentication/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Firebase::Authentication project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/firebase-authentication/blob/main/CODE_OF_CONDUCT.md).
